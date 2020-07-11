@@ -1,5 +1,5 @@
 //
-//  MovieBackgroundCard.swift
+//  MovieBackdropCard.swift
 //  WatchMeNow
 //
 //  Created by Fahraoui Zakaria on 11/07/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct MovieBackgroundCard: View {
+struct MovieBackdropCard: View {
     
     let movie: Movie
     @ObservedObject var imageLoader = ImageLoader()
@@ -27,7 +27,7 @@ struct MovieBackgroundCard: View {
             .aspectRatio(16/9, contentMode: .fit)
             .cornerRadius(8)
             .shadow(radius: 4)
-            Text(movie.title)
+            Text("zakaria, fahraoui")
         }
         .lineLimit(1)
         .onAppear {
@@ -36,8 +36,8 @@ struct MovieBackgroundCard: View {
     }
 }
 
-struct MovieBackgroundCard_Previews: PreviewProvider {
+struct MovieBackdropCard_Previews: PreviewProvider {
     static var previews: some View {
-        MovieBackgroundCard(movie: Movie.stubbedMovie)
+        MovieBackdropCard(movie: Movie.stubbedMovie)
     }
 }
