@@ -1,13 +1,12 @@
 //
-//  ImageLoader.swift
+//  File.swift
 //  WatchMeNow
 //
-//  Created by Fahraoui Zakaria on 11/07/2020.
+//  Created by Fahraoui Zakaria on 12/07/2020.
 //  Copyright © 2020 Fahraoui Zakaria. All rights reserved.
 //
 
 import Foundation
-
 import SwiftUI
 import UIKit
 
