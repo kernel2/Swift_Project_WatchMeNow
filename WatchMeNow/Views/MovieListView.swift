@@ -74,19 +74,7 @@ struct MovieListView: View {
             self.upcomingState.loadMovies(with: .upcoming)
             self.topRatedState.loadMovies(with: .topRated)
             self.popularState.loadMovies(with: .popular)
-        }.environment(\.colorScheme, .dark)
-            .edgesIgnoringSafeArea([.top])
-        
-    }
-}
-
-extension UINavigationController {
-    override open func viewDidLoad() {
-        super.viewDidLoad()
-        let appearance =
-            UINavigationBarAppearance()
-        appearance.backgroundColor = .lightGray
-        navigationBar.standardAppearance = appearance
+        }
     }
 }
 

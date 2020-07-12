@@ -22,7 +22,7 @@ struct ContentView: View {
                     VStack {
                         Image(systemName: "tv")
                         Text("Movies")
-                    }
+                    }.foregroundColor(.white)
             }
             .tag(0)
             
@@ -31,11 +31,21 @@ struct ContentView: View {
                     VStack {
                         Image(systemName: "magnifyingglass")
                         Text("Search")
-                    }
+                    }.foregroundColor(.white)
             }
             .tag(1)
         }.environment(\.colorScheme, .dark)
             .edgesIgnoringSafeArea([.top])
+    }
+}
+
+extension UINavigationController {
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+        let appearance =
+            UINavigationBarAppearance()
+        appearance.backgroundColor = .lightGray
+        navigationBar.standardAppearance = appearance
     }
 }
 
