@@ -19,7 +19,6 @@
 		EB1458B024BA5DAC00DB2EBC /* MoviePosterCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1458AF24BA5DAC00DB2EBC /* MoviePosterCarouselView.swift */; };
 		EB1458B224BA5DD600DB2EBC /* MoviePosterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1458B124BA5DD600DB2EBC /* MoviePosterCard.swift */; };
 		EB1458C024BA752000DB2EBC /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1458BF24BA752000DB2EBC /* MovieListView.swift */; };
-		EB1458C224BA7F2D00DB2EBC /* MovieListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1458C124BA7F2D00DB2EBC /* MovieListState.swift */; };
 		EB1458CA24BA88E200DB2EBC /* MovieSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1458C924BA88E200DB2EBC /* MovieSearchView.swift */; };
 		EB1458CC24BA8CF200DB2EBC /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1458CB24BA8CF200DB2EBC /* SearchBar.swift */; };
 		EB1458CE24BA8EF600DB2EBC /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1458CD24BA8EF600DB2EBC /* ImageLoader.swift */; };
@@ -73,7 +72,6 @@
 		EB1458AF24BA5DAC00DB2EBC /* MoviePosterCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCarouselView.swift; sourceTree = "<group>"; };
 		EB1458B124BA5DD600DB2EBC /* MoviePosterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCard.swift; sourceTree = "<group>"; };
 		EB1458BF24BA752000DB2EBC /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
-		EB1458C124BA7F2D00DB2EBC /* MovieListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListState.swift; sourceTree = "<group>"; };
 		EB1458C924BA88E200DB2EBC /* MovieSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchView.swift; sourceTree = "<group>"; };
 		EB1458CB24BA8CF200DB2EBC /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		EB1458CD24BA8EF600DB2EBC /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
@@ -138,7 +136,6 @@
 				EB1458AF24BA5DAC00DB2EBC /* MoviePosterCarouselView.swift */,
 				EB1458B124BA5DD600DB2EBC /* MoviePosterCard.swift */,
 				EB1458BF24BA752000DB2EBC /* MovieListView.swift */,
-				EB1458C124BA7F2D00DB2EBC /* MovieListState.swift */,
 				EB1458C924BA88E200DB2EBC /* MovieSearchView.swift */,
 			);
 			path = Views;
@@ -419,7 +416,6 @@
 				EB1458D224BA8F5C00DB2EBC /* MovieListState.swift in Sources */,
 				EB49A66F24A965BB005C2DAE /* Utils.swift in Sources */,
 				EB1458A924BA56D800DB2EBC /* LoadingView.swift in Sources */,
-				EB1458C224BA7F2D00DB2EBC /* MovieListState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

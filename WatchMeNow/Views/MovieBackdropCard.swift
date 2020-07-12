@@ -27,7 +27,7 @@ struct MovieBackdropCard: View {
             .aspectRatio(16/9, contentMode: .fit)
             .cornerRadius(8)
             .shadow(radius: 4)
-            Text("zakaria, fahraoui")
+            Text(movie.title)
         }
         .lineLimit(1)
         .onAppear {
