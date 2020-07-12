@@ -34,7 +34,8 @@ struct ContentView: View {
                     }
             }
             .tag(1)
-        }
+        }.environment(\.colorScheme, .dark)
+            .edgesIgnoringSafeArea([.top])
     }
 }
 

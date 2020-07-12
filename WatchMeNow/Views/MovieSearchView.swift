@@ -39,19 +39,10 @@ struct MovieSearchView: View {
             }
             .navigationBarTitle("Search you movie")
         }.environment(\.colorScheme, .dark)
-            .edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea([.top])
     }
 }
 
-extension UINavigationController {
-    override open func viewDidLoad() {
-        super.viewDidLoad()
-        let appearance =
-            UINavigationBarAppearance()
-        appearance.backgroundColor = .darkGray
-        navigationBar.standardAppearance = appearance
-    }
-}
 
 struct MovieSearchView_Previews: PreviewProvider {
     static var previews: some View {
