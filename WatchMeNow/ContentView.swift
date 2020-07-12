@@ -9,6 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    init() {
+//        UITableView.appearance().backgroundColor = UIColor.red
+//        UITabBar.appearance().backgroundColor = UIColor.red
+    }
+    
     var body: some View {
         TabView {
             MovieListView()

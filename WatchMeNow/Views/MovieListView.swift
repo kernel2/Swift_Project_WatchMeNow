@@ -32,18 +32,6 @@ struct MovieListView: View {
                 .listRowInsets(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
                 
                 Group {
-                    if upcomingState.movies != nil {
-                        MovieBackdropCarouselView(title: "Upcoming", movies: upcomingState.movies!)
-                    } else {
-                        LoadingView(isLoading: self.upcomingState.isLoading, error: self.upcomingState.error) {
-                            self.upcomingState.loadMovies(with: .upcoming)
-                        }
-                    }
-                }
-                .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
-                
-                
-                Group {
                     if topRatedState.movies != nil {
                         MovieBackdropCarouselView(title: "Top Rated", movies: topRatedState.movies!)
                         
@@ -52,8 +40,6 @@ struct MovieListView: View {
                             self.topRatedState.loadMovies(with: .topRated)
                         }
                     }
-                    
-                    
                 }
                 .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                 
@@ -69,8 +55,19 @@ struct MovieListView: View {
                 }
                 .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 16, trailing: 0))
                 
+                Group {
+                    if upcomingState.movies != nil {
+                        MovieBackdropCarouselView(title: "Upcoming", movies: upcomingState.movies!)
+                    } else {
+                        LoadingView(isLoading: self.upcomingState.isLoading, error: self.upcomingState.error) {
+                            self.upcomingState.loadMovies(with: .upcoming)
+                        }
+                    }
+                }
+                .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
+                
             }
-            .navigationBarTitle("The MovieDb")
+            .navigationBarTitle("The Movies")
         }
         .onAppear {
             self.nowPlayingState.loadMovies(with: .nowPlaying)

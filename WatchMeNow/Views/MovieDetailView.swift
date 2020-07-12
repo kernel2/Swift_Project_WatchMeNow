@@ -21,7 +21,6 @@ struct MovieDetailView: View {
             
             if movieDetailState.movie != nil {
                 MovieDetailListView(movie: self.movieDetailState.movie!)
-                
             }
         }
         .navigationBarTitle(movieDetailState.movie?.title ?? "")
@@ -30,6 +29,7 @@ struct MovieDetailView: View {
         }
     }
 }
+
 
 struct MovieDetailListView: View {
     
@@ -101,6 +101,34 @@ struct MovieDetailListView: View {
                 }
             }
             
+            VStack {
+                HStack {
+                    Text("Cast")
+                        .fontWeight(.medium)
+                    
+                    Spacer()
+                    
+                    Button(action: seeAllButton) {
+                        Text("See all")
+                    }
+                }
+                .padding()
+                
+                ScrollView(.horizontal, showsIndicators: true) {
+                    HStack {
+                        ForEach(0 ..< 12) { item in
+                            VStack {
+                                Image(systemName: "person.crop.circle")
+                                    .font(.system(size: 60))
+                                Text("Some\nPerson")
+                                    .fontWeight(.semibold)
+                            }
+                            .padding()
+                        }
+                    }
+                }
+            }
+            
             Divider()
             
             if movie.youtubeTrailers != nil && movie.youtubeTrailers!.count > 0 {
@@ -123,6 +151,9 @@ struct MovieDetailListView: View {
         .sheet(item: self.$selectedTrailer) { trailer in
             SafariView(url: trailer.youtubeURL!)
         }
+    }
+    func seeAllButton() {
+        print("See all")
     }
 }
 
